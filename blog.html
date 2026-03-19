@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+lang: en
+authors:
+- Ben Matthies
+---
+
+<figure>
+  <img height="320" src="/assets/xkcd148.png" alt="Why don't you write about it in your blag?">
+  <figcaption>CC-BY-NC 2.5 xkcd.com/148</figcaption>
+</figure>
+
+<section class="articles">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <article>
+      <h1>{{ post.title }}</h1>
+      <ul class="tags">
+        {% for tag in post.tags %}
+        <li>#{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ post.excerpt }}</p>
+    </article>
+  </a>
+  {% endfor %}
+</section>
