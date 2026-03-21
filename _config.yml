@@ -1,1 +1,7 @@
 title: Ben Matthies
+exclude: [
+  "flake.nix",
+  "flake.lock",
+  "Justfile"
+]
+include: [".htaccess"]
