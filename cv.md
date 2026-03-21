@@ -14,6 +14,7 @@ authors:
   <address class="email">
     <a href="mailto:ben@matthsch.de">ben@matthsch.de</a>
   </address>
+  <a href="/assets/pgp/ben.asc">PGP</a>
 </figure>
 </aside>
 
